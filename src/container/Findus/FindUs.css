@@ -1,0 +1,55 @@
+.app__findus{
+    display: flex;
+    background: url(../../assets/bg.png);
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 100vh;
+    
+    
+    
+}
+
+.app__findus-content{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+.app__findus-img{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.app__findus-img img{
+    width: 80%;
+}
+
+@media screen and (max-width:1150px) {
+    .app__findus{
+        flex-direction: column;
+    }
+    .app__findus-img img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1900px){
+    .app__findus-img img{
+        width: 80%;
+    }
+    .app__findus{
+        justify-content: center;
+        align-items: center;
+    }
+    .app__findus-content button{
+        min-width: 220px;
+        height: 90px;
+        font-size: 30px;
+        border-radius: 10%;
+    }
+}

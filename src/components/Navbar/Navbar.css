@@ -1,0 +1,142 @@
+.app__navbar{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 20px;
+}
+ .app__navbar--img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+}
+.app__navbar--img img{
+    width: 100%;
+    
+} 
+
+.app__navbar--links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.app__navbar--links li{
+    display: flex;
+    margin: 0 1rem;
+} 
+ .app__navbar--links li:hover{
+    color: var(--color-grey);
+}
+
+.app__navbar--login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    
+
+} 
+
+ .app__navbar--login div{
+    height: 30px;
+    width: 1px;
+    background-color: var(--color-grey);
+}  
+ 
+.app__navbar--login a{
+    margin: 0 1rem;
+}
+.app__navbar--login a:hover{
+    color: var(--color-golden);
+    border-bottom: 1px solid var(--color-golden);
+    transition: 0.5s ease;
+}
+
+
+.app__navbar--smallscreen{
+    display: none;
+}
+
+.app__navbar--smallscreen_overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--color-black);
+    transition: 0.5s ease;
+    z-index: 5;
+    flex-direction: column;
+    
+}
+.app__navbar--smallscreen_overlay-links{
+    list-style: none;
+
+}
+
+.app__navbar--smallscreen_overlay-links li{
+    margin: 1rem 0;
+    cursor: pointer;
+    font-size: 27px;
+    color: var(--color-golden);
+    font-family: var(--font-base);
+}
+
+.app__navbar--smallscreen_overlay .overlay_close{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+@media  screen and (min-width:2000px) {
+
+    .app__navbar--img{
+        width: 250px;
+    }
+
+    .app__navbar--img img{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:1150px){
+    .app__navbar--links{
+        display: none;
+    }
+    .app__navbar--smallscreen{
+        display: flex; 
+    }
+}
+
+@media screen and (max-width:650px){   
+    .app__navbar{
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .app__navbar--login{
+        display: none;
+    }
+    .app__navbar--img{
+        width: 120px;
+        display: flex;
+        justify-content: flex-start;
+    
+    }
+    .app__navbar--img img{
+        width: 100%;
+    }
+    
+    }
+
+

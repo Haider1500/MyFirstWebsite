@@ -1,0 +1,100 @@
+.app__chef{
+    background-color: var(--color-black);
+    width: 100%;
+    justify-content: space-between;
+    background: url(../../assets/bg.png);
+    background-repeat: repeat;
+    background-position: fixed;
+    background-size: cover;
+
+
+}
+
+.app__chef_img{
+    flex: 1;
+   width: 100%;
+   display: flex;
+   justify-content: flex-start;
+   margin-right: 2rem;
+}
+
+.app__chef_img img{
+    width: 420px;
+    height: auto;
+}
+
+.app__chef_content{
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    margin-left: 1rem;
+}
+.app__chef_content-para{
+    margin: 3rem 0;
+}
+
+.app__chef_content-para--head{
+    display: flex;
+    width: 100%;
+}
+.app__chef_content-para--head img{
+    width: 47px;
+    height: 40px;
+    flex-shrink: 0;
+}
+.app__chef_content-heading{
+    width: 100%;
+    margin-bottom: 4rem;
+    
+}
+.app__chef_content-name p:first-child {
+
+
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+letter-spacing: 1.28px;
+text-transform: capitalize;
+
+}
+
+.app__chef_content-name{
+    margin: 1rem 0;
+}
+.app__chef_content-sign--img{
+    margin: 2rem 0;
+}
+
+.app__chef_content-sign--img img{
+    width: 250px;
+}
+
+
+@media screen and (min-width:2000px) {
+    .app__chef_img img{
+        width: 80%;
+    }
+    .app__chef{
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .app__chef{
+        flex-direction: column;
+    }
+    .app__chef_img{
+        margin: 0 1rem;
+    }
+    .app__chef_img img{
+        width: 100%;
+        height: auto;
+    } 
+    .app__chef_content-subheading{
+        margin-top: 5rem;
+    }  
+    
+}
